@@ -1,0 +1,98 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.solutions {
+    & h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 125%;
+        text-align: center;
+        color: #292A2B;
+        margin-bottom: 44px;
+        max-width: 648px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    &__item {
+        background-color: #142346;
+        border-radius: 40px;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 37%;
+        box-sizing: border-box;
+    }
+    &__item:nth-child(1) {
+        background-image: url(img/preview-1.jpg);
+    }
+    &__item:nth-child(2) {
+        background-image: url(img/preview-2.jpg);
+    }
+    &__item:nth-child(3) {
+        background-image: url(img/preview-3.jpg);
+    }
+    &__item:nth-child(4) {
+        background-image: url(img/preview-4.jpg);
+    }
+    &__item:nth-child(5) {
+        background-image: url(img/preview-5.jpg);
+    }
+    &__item:nth-child(6) {
+        background-image: url(img/preview-6.jpg);
+    }
+    &__text-wrap {
+        margin-top: 40px;
+        width: 60%;
+        height: 16vw;
+        padding: 0 0 0 25px;
+    }
+    & h4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        // font-size: 20px;
+        font-size: 1.7vw;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    & p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        // font-size: 16px;
+        font-size: 1.25vw;
+        line-height: 138%;
+        color: #FFFFFF;
+        width: 80%;
+    }
+    @media (max-width: 1199px) {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            background-size: 15%;
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .switching-break {
+        display: none;
+    }
+}
